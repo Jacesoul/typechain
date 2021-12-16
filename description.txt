@@ -20,3 +20,10 @@
 - 생성자(constructor)는 메서드인데 클래스로부터 객체(object)를 만들때마다 호출된다.
 - 인터페이스를 사용하면 typescript측면에서 좀더 안전하다. 그런데 만약 react를 쓰거나 express, node 등등을 사용하게 된다면 코드에서 클래스를 사용해야한다. 
 - private은 오직 Human 클래스 내부에서만 접근이 가능하다. 이렇게 하면 클래스 내부의 속성을 보호할수가 있다.
+
+### Blockchain
+- 블록체인은 블록의 연결이다. (array of blocks) 
+- 새로운 블록을 만들기 위해서는 해쉬를 계산해야한다. 해쉬는 모든 속성을 엄청 길고 수학적으로 이상한 하나의 문자열로 결합한것이다.
+- yarn add crypto-js
+- static method는 method가 Block 클래스 안에 있고 클래스가 생성되지 않았어도 호출할수 있는 method라는 의미이다. Block클래스안에서 항상 사용가능한 method이다. 
+- 일반적인 method는 Block클래스를 생성했을때만 사용가능하다. 
