@@ -14,3 +14,9 @@
 - Cannot find module 'typescript/bin/tsc'이라는 오류가 나오면 아래 명령어 실행하기
 - npm i -D @types/node typescript ts-node
 - 타입스크립트는 person이 Human 인터페이스와 같은 구조를 가지고 있는지 확인한다. 이것이 너만의 objects를 어떻게 표현하는지에 대한 방법이다. 
+- 문제가 일어나는것을 막기위해 인터페이스는 js로 컴파일 되지 않는다. 
+- 인터페이스에서 대신 넣을것이 클래스이다. 타입스크립트에서 클래스는 코드를 컨트롤 할수있게 해준다.
+- JavaScript에서는 클래스의 속성들을 묘사할 필요가 없다. 그러나 TypeScript에서는 클래스가 어떤 속성들을 가져야하는지와 그런 속성들이 가지고 있는 권한(permission)을 선언해야한다. 
+- 생성자(constructor)는 메서드인데 클래스로부터 객체(object)를 만들때마다 호출된다.
+- 인터페이스를 사용하면 typescript측면에서 좀더 안전하다. 그런데 만약 react를 쓰거나 express, node 등등을 사용하게 된다면 코드에서 클래스를 사용해야한다. 
+- private은 오직 Human 클래스 내부에서만 접근이 가능하다. 이렇게 하면 클래스 내부의 속성을 보호할수가 있다.
